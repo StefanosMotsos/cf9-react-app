@@ -14,7 +14,7 @@ const Layout = (
         <>
             <div className={addClasses}>
                 <Header/>
-                <main className='container mx-auto min-h-[95vh]'>{children}</main>
+                <main className='container mx-auto min-h-[95vh] pt-36'>{children}</main>
                 <Footer/>
             </div>
         </>

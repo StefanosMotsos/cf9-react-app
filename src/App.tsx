@@ -43,8 +43,9 @@
 //
 // // PropsThree = {title, description, price, sort, image}
 
-import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
+// import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 import Layout from "./components/Layout";
+import Counter from "./components/LessonFour/Counter.tsx";
 
 
 function App() {
@@ -62,12 +63,13 @@ function App() {
         {/*  title="Second Title"*/}
         {/*  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates."*/}
         {/*/>*/}
-        <Layout addClasses='text-blue-600 bg-grey-200'>
-          <ArrowFunctionalComponentWithProps
-            title="Second Title"
-            description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates."
-          />
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, dicta fuga modi mollitia placeat sequi. A ab accusamus aspernatur assumenda eaque harum ipsum molestias omnis quae quod, reiciendis rem voluptatem?</p>
+        <Layout addClasses='bg-grey-50'>
+          {/*<ArrowFunctionalComponentWithProps*/}
+          {/*  title="Second Title"*/}
+          {/*  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates."*/}
+          {/*/>*/}
+          {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, dicta fuga modi mollitia placeat sequi.</p>*/}
+          <Counter/>
         </Layout>
     </>
   )
