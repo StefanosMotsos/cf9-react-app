@@ -44,6 +44,7 @@
 // // PropsThree = {title, description, price, sort, image}
 
 import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
+import Layout from "./components/Layout";
 
 
 function App() {
@@ -56,11 +57,18 @@ function App() {
       {/*<ArrowFunctionalComponent />*/}
 
       {/*LESSON THREE*/}
-      <ArrowFunctionalComponentWithProps title="Heading 1"/>
-      <ArrowFunctionalComponentWithProps
-          title="Second Title"
-          description="This is a description"
-      />
+        {/*<ArrowFunctionalComponentWithProps title="Heading 1"/>*/}
+        {/*<ArrowFunctionalComponentWithProps*/}
+        {/*  title="Second Title"*/}
+        {/*  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates."*/}
+        {/*/>*/}
+        <Layout>
+          <ArrowFunctionalComponentWithProps
+            title="Second Title"
+            description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates."
+          />
+          <p className="text-red-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, dicta fuga modi mollitia placeat sequi. A ab accusamus aspernatur assumenda eaque harum ipsum molestias omnis quae quod, reiciendis rem voluptatem?</p>
+        </Layout>
     </>
   )
 }
