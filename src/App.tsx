@@ -45,7 +45,12 @@
 
 // import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 import Layout from "./components/Layout";
-import Counter from "./components/LessonFour/Counter.tsx";
+//import NameChanger from "./components/LessonFive/NameChanger.tsx";
+//import CounterButton from "./components/LessonFour/CounterButton.tsx";
+//import CounterWithCustomHook from "./components/LessonFive/CounterWithCustomHook.tsx";
+import NameChangerWithTitle from "./components/LessonFive/NameChangerWithTitle.tsx";
+//import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
+// import Counter from "./components/LessonFour/Counter.tsx";
 
 
 function App() {
@@ -63,13 +68,18 @@ function App() {
         {/*  title="Second Title"*/}
         {/*  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates."*/}
         {/*/>*/}
-        <Layout addClasses='bg-grey-50'>
-          {/*<ArrowFunctionalComponentWithProps*/}
-          {/*  title="Second Title"*/}
-          {/*  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates."*/}
-          {/*/>*/}
-          {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, dicta fuga modi mollitia placeat sequi.</p>*/}
-          <Counter/>
+        {/*<Layout addClasses='bg-grey-50'>*/}
+        {/*  /!*<ArrowFunctionalComponentWithProps*!/*/}
+        {/*  /!*  title="Second Title"*!/*/}
+        {/*  /!*  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates."*!/*/}
+        {/*  /!*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, dicta fuga modi mollitia placeat sequi.</p>*!/*/}
+        {/*  /!*<Counter/>*!/*/}
+        {/*    <CounterAdvanced/>*/}
+        {/*</Layout>*/}
+
+        {/*LESSON FIVE*/}
+        <Layout>
+            <NameChangerWithTitle/>
         </Layout>
     </>
   )
