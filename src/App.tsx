@@ -45,10 +45,12 @@
 
 // import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 import Layout from "./components/Layout";
+//import AutoRedirect from "./components/LessonSix/AutoRedirect.tsx";
+import AutoRedirectAdvanced from "./components/LessonSix/AutoRedirectAdvanced.tsx";
 //import NameChanger from "./components/LessonFive/NameChanger.tsx";
 //import CounterButton from "./components/LessonFour/CounterButton.tsx";
 //import CounterWithCustomHook from "./components/LessonFive/CounterWithCustomHook.tsx";
-import NameChangerWithTitle from "./components/LessonFive/NameChangerWithTitle.tsx";
+//import NameChangerWithTitle from "./components/LessonFive/NameChangerWithTitle.tsx";
 //import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
 
@@ -78,8 +80,13 @@ function App() {
         {/*</Layout>*/}
 
         {/*LESSON FIVE*/}
-        <Layout>
-            <NameChangerWithTitle/>
+        {/*<Layout>*/}
+        {/*    <NameChangerWithTitle/>*/}
+        {/*</Layout>*/}
+
+        {/*LESSON SIX*/}
+        <Layout addClasses="bg-grat-50">
+            <AutoRedirectAdvanced />
         </Layout>
     </>
   )
