@@ -45,8 +45,11 @@
 
 // import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 import Layout from "./components/Layout";
+import PreviousValue from "./components/LessonSix/PreviousValue.tsx";
+//import WindowSize from "./components/LessonSix/WindowSize.tsx";
+//import FocusInput from "./components/LessonSix/FocusInput.tsx";
 //import AutoRedirect from "./components/LessonSix/AutoRedirect.tsx";
-import AutoRedirectAdvanced from "./components/LessonSix/AutoRedirectAdvanced.tsx";
+//import AutoRedirectAdvanced from "./components/LessonSix/AutoRedirectAdvanced.tsx";
 //import NameChanger from "./components/LessonFive/NameChanger.tsx";
 //import CounterButton from "./components/LessonFour/CounterButton.tsx";
 //import CounterWithCustomHook from "./components/LessonFive/CounterWithCustomHook.tsx";
@@ -86,7 +89,10 @@ function App() {
 
         {/*LESSON SIX*/}
         <Layout addClasses="bg-grat-50">
-            <AutoRedirectAdvanced />
+            {/*<AutoRedirectAdvanced />*/}
+            {/*<WindowSize/>*/}
+            {/*<FocusInput/>*/}
+            <PreviousValue />
         </Layout>
     </>
   )
