@@ -44,8 +44,11 @@
 // // PropsThree = {title, description, price, sort, image}
 
 // import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
-import Layout from "./components/Layout";
-import PreviousValue from "./components/LessonSix/PreviousValue.tsx";
+//import Layout from "./components/Layout";
+//import PreviousValue from "./components/LessonSix/PreviousValue.tsx";
+// import {Route, Routes} from "react-router";
+// import NameChanger from "./components/LessonFive/NameChanger.tsx";
+// import HomePage from "./pages/HomePage.tsx";
 //import WindowSize from "./components/LessonSix/WindowSize.tsx";
 //import FocusInput from "./components/LessonSix/FocusInput.tsx";
 //import AutoRedirect from "./components/LessonSix/AutoRedirect.tsx";
@@ -57,6 +60,10 @@ import PreviousValue from "./components/LessonSix/PreviousValue.tsx";
 //import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
 
+
+import {Route, Routes} from "react-router";
+import HomePage from "./pages/HomePage.tsx";
+import RouterLayout from "./components/RouterLayout.tsx";
 
 function App() {
 
@@ -93,12 +100,63 @@ function App() {
         {/*</Layout>*/}
 
         {/*LESSON SIX*/}
-        <Layout addClasses="bg-grat-50">
-            {/*<AutoRedirectAdvanced />*/}
-            {/*<WindowSize/>*/}
-            {/*<FocusInput/>*/}
-            <PreviousValue />
-        </Layout>
+        {/*<Layout addClasses="bg-grat-50">*/}
+        {/*    /!*<AutoRedirectAdvanced />*!/*/}
+        {/*    /!*<WindowSize/>*!/*/}
+        {/*    /!*<FocusInput/>*!/*/}
+        {/*    <PreviousValue />*/}
+        {/*</Layout>*/}
+
+        {/*/*/}
+        {/*/examples/*/}
+        {/*/examples/name-changer*/}
+        {/*/examples/counter*/}
+        {/*/examples/counter-advanced*/}
+
+        {/*LESSON SEVEN*/}
+        {/*<Routes>*/}
+        {/*  <Route index element={<HomePage />} />*/}
+        {/*  /!*<Route path="/" element={<HomePage />} />*!/*/}
+        {/*  <Route path="name-changer" element={<NameChanger />} />*/}
+        {/*  <Route path="counter" element={<Counter />} />*/}
+        {/*  <Route path="counter-advanced" element={<CounterAdvanced />} />*/}
+        {/*</Routes>*/}
+
+        {/*/*/}
+        {/*/examples/*/}
+        {/*/examples/name-changer*/}
+        {/*/examples/counter*/}
+        {/*/examples/counter-advanced*/}
+
+        <Routes>
+            <Route element={<RouterLayout />}>
+                <Route index element={<HomePage />} />
+                {/*<Route path="examples?">*/}
+                {/*<Route path="examples">*/}
+                {/*  <Route index element={<NameChanger />} />*/}
+                {/*  <Route path="name-changer" element={<NameChanger />} />*/}
+                {/*  <Route path="counter" element={<Counter />} />*/}
+                {/*  <Route path="counter-advanced" element={<CounterAdvanced />} />*/}
+                {/*</Route>*/}
+
+                <Route path="users">
+                    {/*<Route index element={<UserListPage />} />*/}
+                    <Route path=":userId" element={<UserPage />} />
+                    {/*  /users/15  Path Params  */}
+                    {/*  /users?id=15  Query Params  */}
+                    {/*  /users?page=2&sort=asc  Query Params  */}
+                </Route>
+
+
+            </Route>
+            {/* /files/* */}
+            {/*<Route path="files/*" element={<File />} />*/}
+            {/*let params = useParams();*/}
+            {/*let filepath = params["*"]*/}
+            {/*<Route path="*" element={<NotFoundPage />} />*/}
+
+        </Routes>
+
     </>
   )
 }
