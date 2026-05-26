@@ -59,6 +59,11 @@ import PreviousValue from "./components/LessonSix/PreviousValue.tsx";
 
 
 function App() {
+
+    // useEffect(() => {
+    //   history.pushState({}, "", "/about");
+    // }, []);
+
   return (
     <>
       {/*LESSON TWO*/}
