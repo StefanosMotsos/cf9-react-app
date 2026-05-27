@@ -64,6 +64,8 @@
 import {Route, Routes} from "react-router";
 import HomePage from "./pages/HomePage.tsx";
 import RouterLayout from "./components/RouterLayout.tsx";
+import UserPage from "./pages/UserPage.tsx";
+import SearchPage from "./pages/SearchPage.tsx";
 
 function App() {
 
@@ -146,6 +148,8 @@ function App() {
                     {/*  /users?id=15  Query Params  */}
                     {/*  /users?page=2&sort=asc  Query Params  */}
                 </Route>
+
+                <Route path="search" element={<SearchPage />} />
 
 
             </Route>
