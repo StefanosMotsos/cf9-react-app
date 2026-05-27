@@ -66,6 +66,7 @@ import HomePage from "./pages/HomePage.tsx";
 import RouterLayout from "./components/RouterLayout.tsx";
 import UserPage from "./pages/UserPage.tsx";
 import SearchPage from "./pages/SearchPage.tsx";
+import MultiFieldForm from "./components/LessonNine/MultiFieldForm.tsx";
 
 function App() {
 
@@ -150,6 +151,8 @@ function App() {
                 </Route>
 
                 <Route path="search" element={<SearchPage />} />
+
+                <Route path='multifield-form' element={<MultiFieldForm/>} />
 
 
             </Route>
